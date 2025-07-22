@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome to AH's Webpage</title>
-    <style>
-        body {
-            background: linear-gradient(to right, #1c92d2, #f2fcfe);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: black; /* ✅ Black font everywhere */
-        }
+  <meta charset="UTF-8">
+  <title>SG Communication - A1 Shop</title>
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #2e003e, #1f005c);
+      color: #ffffff;
+      text-align: center;
+    }
 
-        header {
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* ✅ Fixed background */
-            padding: 40px 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-bottom: 4px solid #ff6f61;
-            border-radius: 0 0 20px 20px;
-            color: white; /* Optional: make header text white for contrast */
-        }
+    /* Header section */
+    header {
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border-bottom: 3px solid #ff00cc;
+      border-radius: 0 0 25px 25px;
+    }
 
-        h1 {
-            font-size: 52px;
-            margin-bottom: 10px;
-        }
+    h1 {
+      font-size: 52px;
+      margin: 0;
+      color: #ff66cc;
+      letter-spacing: 1px;
+    }
 
-        p {
-            font-size: 20px;
-            color: black; /* ✅ Ensures paragraph text is black */
-            margin: 10px 0;
-        }
+    h2 {
+      font-size: 26px;
+      margin-top: 10px;
+      color: #ffc107;
+    }
 
-        .btn {
-            margin-top: 40px;
-            padding: 15px 35px;
-            background-color: #ff6f61;
-            color: black;
-            border: none;
-            border-radius: 30px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
+    .subtitle {
+      font-size: 18px;
+      color: #cccccc;
+      margin-top: 8px;
+    }
 
-        .btn:hover {
-            background-color: #e4574f;
-            transform: scale(1.05); /* ✅ Fixed missing parenthesis */
-        }
+    /* Service section */
+    .services {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 15px;
+      max-width: 850px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
 
-        footer {
-            margin-top: 80px;
-            font-size: 15px;
-            color: black;
-            padding: 20px;
-            background-color: #ffffffcc;
-            border-top: 2px solid #ff6f61;
-        }
+    .services h3 {
+      font-size: 28px;
+      color: #00f0ff;
+      margin-bottom: 10px;
+    }
 
-        .designer {
-            font-weight: bold;
-            color: black;
-            margin-top: 10px;
-        }
-    </style>
+    .services p {
+      color: #eeeeee;
+      font-size: 18px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 30px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      object-fit: cover;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(255, 0, 200, 0.6);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      border-top: 1px solid #555;
+    }
+
+    .designer {
+      font-weight: bold;
+      font-size: 16px;
+      color: #00ffcc;
+    }
+
+  </style>
 </head>
 <body>
-    <header>
-        <h1>🌟 Welcome to My Page!</h1>
-        <p>Made with 💖 using HTML & CSS</p>
-        <p class="designer">Designed by Areef Hussain</p>
-    </header>
 
-    <button class="btn" onclick="alert('Thanks for visiting!')">Click Me</button>
+  <header>
+    <h1>SG Communication</h1>
+    <h2>A1 Shop</h2>
+    <p class="subtitle">Your Trusted Store for Mobile Phones & Second-Hand Services</p>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-        <p class="designer">Designed by Areef Hussain</p>
-    </footer>
+  <section class="services">
+    <h3>Second Mobile Service</h3>
+    <p>We buy and sell second-hand smartphones with full verification, trust, and affordable pricing!</p>
+  </section>
+
+  <section class="gallery">
+    <img src="https://via.placeholder.com/200x300?text=Mobile+1" alt="Mobile 1">
+    <img src="https://via.placeholder.com/200x300?text=Mobile+2" alt="Mobile 2">
+    <img src="https://via.placeholder.com/200x300?text=Mobile+3" alt="Mobile 3">
+    <img src="https://via.placeholder.com/200x300?text=Mobile+4" alt="Mobile 4">
+  </section>
+
+  <footer>
+    <p class="designer">Designed by <strong>AREEF HUSSAIN</strong></p>
+  </footer>
+
 </body>
 </html>
-
